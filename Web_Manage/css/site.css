@@ -1,0 +1,53 @@
+/* CSS Document */
+.input_size0 {
+	width:50px;
+}
+.input_size1 {
+	width:80px;
+	
+}
+.myform-group {
+	margin:5px;
+	float:left;
+	display:inline-block;
+}
+
+.myform-error {
+	background-color:#EBEBEB;
+}
+
+.myform-label{
+	margin-right:5px;
+}
+.label-font{
+	font-size:11px;
+}
+.myform-formgroup-label{
+	width:120px;
+	float:left;
+}
+.myform-formgroup-button{
+	margin-left:115px;
+}
+.myform-control {
+	font-size: 12px;
+	height: 23px;	
+	color: #555;
+	vertical-align: middle;
+	border: 1px solid #ccc;
+	border-radius: 4px;
+	-webkit-box-shadow: inset 0 1px 1px rgba(0,0,0,0.075);
+	box-shadow: inset 0 1px 1px rgba(0,0,0,0.075);
+	-webkit-transition: border-color ease-in-out .15s,box-shadow ease-in-out .15s;
+	transition: border-color ease-in-out .15s,box-shadow ease-in-out .15s;
+}
+
+.myform_pic{
+	border:1px solid #999; padding:5px; background:#efefef;
+}
+
+@media (max-width: 768px){
+	.myform-formgroup-label{
+		float:none;
+	}
+}

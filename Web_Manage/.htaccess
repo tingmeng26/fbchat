@@ -1,0 +1,13 @@
+RewriteEngine On
+Header always edit Set-Cookie (.*) "$1; HTTPOnly"
+Header always edit Set-Cookie (.*) "$1; Secure"
+Header always unset X-Frame-Options
+Header always append X-Frame-Options SAMEORIGIN
+
+RewriteCond %{REQUEST_FILENAME} -f [NC,OR]
+RewriteCond %{REQUEST_FILENAME} -d [NC,OR]
+RewriteCond %{REQUEST_URI} ^.*(.css|.js|.gif|.png|.jpg|.jpeg)$ [NC]
+
+#RewriteRule .* - [S=1]
+RewriteCond %{SERVER_PORT} !^443$
+#RewriteRule ^.*$ https://%{SERVER_NAME}%{REQUEST_URI} [L,R]
